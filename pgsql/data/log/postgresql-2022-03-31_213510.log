@@ -1,0 +1,8 @@
+2022-03-31 21:35:10.254 WIB [1] LOG:  could not open usermap file "/var/lib/postgresql/data/pg_ident.conf": No such file or directory
+2022-03-31 21:35:10.290 WIB [29] LOG:  database system was shut down at 2022-03-31 21:26:46 WIB
+2022-03-31 21:35:10.338 WIB [1] LOG:  database system is ready to accept connections
+2022-03-31 21:36:12.031 WIB [1] LOG:  received fast shutdown request
+2022-03-31 21:36:12.055 WIB [1] LOG:  aborting any active transactions
+2022-03-31 21:36:12.057 WIB [1] LOG:  background worker "logical replication launcher" (PID 35) exited with exit code 1
+2022-03-31 21:36:12.057 WIB [30] LOG:  shutting down
+2022-03-31 21:36:12.244 WIB [1] LOG:  database system is shut down
