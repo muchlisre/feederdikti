@@ -1,0 +1,11 @@
+2023-11-14 16:39:17.408 WIB [1] LOG:  could not open usermap file "/var/lib/postgresql/data/pg_ident.conf": No such file or directory
+2023-11-14 16:39:17.422 WIB [28] LOG:  database system was shut down at 2023-11-14 10:21:19 WIB
+2023-11-14 16:39:17.782 WIB [1] LOG:  database system is ready to accept connections
+2023-11-14 16:40:58.334 WIB [1] LOG:  received fast shutdown request
+2023-11-14 16:40:58.340 WIB [1] LOG:  aborting any active transactions
+2023-11-14 16:40:58.342 WIB [37] FATAL:  terminating connection due to administrator command
+2023-11-14 16:40:58.342 WIB [36] FATAL:  terminating connection due to administrator command
+2023-11-14 16:40:58.342 WIB [35] FATAL:  terminating connection due to administrator command
+2023-11-14 16:40:58.349 WIB [1] LOG:  background worker "logical replication launcher" (PID 34) exited with exit code 1
+2023-11-14 16:40:58.431 WIB [29] LOG:  shutting down
+2023-11-14 16:40:58.741 WIB [1] LOG:  database system is shut down

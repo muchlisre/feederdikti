@@ -1,0 +1,78 @@
+2023-11-14 10:15:08.982 WIB [1] LOG:  could not open usermap file "/var/lib/postgresql/data/pg_ident.conf": No such file or directory
+2023-11-14 10:15:08.993 WIB [30] LOG:  database system was shut down at 2022-12-30 23:24:52 WIB
+2023-11-14 10:15:09.220 WIB [1] LOG:  database system is ready to accept connections
+2023-11-14 10:18:12.647 WIB [41] ERROR:  relation "perbaikanlaporanmhs" already exists
+2023-11-14 10:18:12.647 WIB [41] CONTEXT:  SQL statement "CREATE TABLE siak.perbaikanlaporanmhs (
+	  id_sms uuid  NOT NULL,
+	  id_sp uuid  NOT NULL,
+	  id_smt nchar(10) NOT NULL,
+	  nm_pd varchar(200),
+	  nipd varchar(24),
+	  nm_ibu_kandung varchar(200),
+	  jk char(1),
+	  tgl_lahir date,
+	  tmpt_lahir varchar(32),
+	  id_wil char(8),
+	  jln varchar(255),
+	  nik varchar(20),
+	  id_agama smallint,
+	  id_negara char(2),
+	  id_jns_daftar numeric(2),
+	  id_pembiayaan numeric(4),
+	  id_jalur_masuk numeric(4),
+	  tgl_masuk_sp date,
+	  biaya_masuk numeric(16),
+	  id_pt_asal uuid,
+	  id_prodi_asal uuid,
+	  sks_diakui numeric(3),
+	  keterangan text,
+	  last_update TIMESTAMP,
+	  last_sync TIMESTAMP,
+	  status_claim numeric(1),
+	  tgl_selesai date,
+	  PRIMARY KEY ( id_sms, id_sp, id_smt ) 
+	)"
+	PL/pgSQL function inline_code_block line 3 at SQL statement
+2023-11-14 10:18:12.647 WIB [41] STATEMENT:  DO $$ 
+	BEGIN
+	CREATE TABLE siak.perbaikanlaporanmhs (
+	  id_sms uuid  NOT NULL,
+	  id_sp uuid  NOT NULL,
+	  id_smt nchar(10) NOT NULL,
+	  nm_pd varchar(200),
+	  nipd varchar(24),
+	  nm_ibu_kandung varchar(200),
+	  jk char(1),
+	  tgl_lahir date,
+	  tmpt_lahir varchar(32),
+	  id_wil char(8),
+	  jln varchar(255),
+	  nik varchar(20),
+	  id_agama smallint,
+	  id_negara char(2),
+	  id_jns_daftar numeric(2),
+	  id_pembiayaan numeric(4),
+	  id_jalur_masuk numeric(4),
+	  tgl_masuk_sp date,
+	  biaya_masuk numeric(16),
+	  id_pt_asal uuid,
+	  id_prodi_asal uuid,
+	  sks_diakui numeric(3),
+	  keterangan text,
+	  last_update TIMESTAMP,
+	  last_sync TIMESTAMP,
+	  status_claim numeric(1),
+	  tgl_selesai date,
+	  PRIMARY KEY ( id_sms, id_sp, id_smt ) 
+	);
+	INSERT INTO "sync"."table_sync" ("table_name", "table_alias", "sync_type", "sync_seq", "kolom_kecuali", "table_status", "table_ket", "jml_thread", "baris_per_thread", "order_ekstra", "a_table_aktif") VALUES ('perbaikanlaporanmhs', 'perbaikanlaporanmhs', '5', '356', NULL, NULL, NULL, 5, 500, NULL, '1');
+	END;
+	$$
+2023-11-14 10:21:19.571 WIB [1] LOG:  received fast shutdown request
+2023-11-14 10:21:19.588 WIB [1] LOG:  aborting any active transactions
+2023-11-14 10:21:19.588 WIB [45] FATAL:  terminating connection due to administrator command
+2023-11-14 10:21:19.588 WIB [43] FATAL:  terminating connection due to administrator command
+2023-11-14 10:21:19.588 WIB [44] FATAL:  terminating connection due to administrator command
+2023-11-14 10:21:19.601 WIB [1] LOG:  background worker "logical replication launcher" (PID 36) exited with exit code 1
+2023-11-14 10:21:19.711 WIB [31] LOG:  shutting down
+2023-11-14 10:21:20.007 WIB [1] LOG:  database system is shut down
