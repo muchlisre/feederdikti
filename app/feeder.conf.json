@@ -3,5 +3,5 @@
     "old_ws_port": 3003,
     "new_ws_port": 3003,
     "is_customize": false,
-    "rebuild": false
+    "rebuild": true
 }
